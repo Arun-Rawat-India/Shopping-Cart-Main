@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <nav id="navbar">
+            <h3 id="logo">stopMart</h3>
+
+            <div class="search-div">
+                <i class="ri-search-line"></i>
+                <input type="text" id="search_input" placeholder="Search here...">
+                <button id="search-btn">Search</button>
+            </div>
+            <div class="cart-icon">
+                <div id="cart-quantity-number">0</div>
+                <i class="ri-shopping-cart-2-line"></i>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <div id="filter-section">
+            <h3>Filters</h3>
+            <div class="categories">
+                <p>Categories</p>
+                <button onclick="filterProducts('all')" class="cat-btn">All</button>
+                <button onclick="filterProducts('topwear')" class="cat-btn">Topwear</button>
+                <button onclick="filterProducts('bottomwear')" class="cat-btn">Bottomwear</button>
+                <button onclick="filterProducts('electronic')" class="cat-btn">Electronic</button>
+                <button onclick="filterProducts('accessories')" class="cat-btn">Accessories</button>
+            </div>
+            <div class="price-filter">
+
+            </div>
+        </div>
+        <div id="shopping-section">
+            <!-- Render product by javascript -->
+        </div>
+    </main>
+
+    <div id="cart">
+        <i class="ri-close-fill cart-close-btn"></i>
+        <div class="cart-heading">
+            <h5>Name</h5>
+            <h5>Item Value</h5>
+            <h5>Quantity</h5>
+        </div>
+
+        <div id="cart-items">
+
+            <!-- Generate through javascript -->
+           
+        </div>
+
+        <div class="cart-footer">
+            <div class="subtotal">
+                Subtotal (0 items): ₹0
+            </div>
+            <div class="checkout">
+                Proceed to checkout
+            </div>
+        </div>
+
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
