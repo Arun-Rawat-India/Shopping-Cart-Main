@@ -237,25 +237,3 @@ const quantityChange = (action, id) => {
     })
     updateCart()
 }
-
-// function quantityChange(action, id) {
-//     console.log(id);
-//     console.log(action);
-//     cart = cart.map((item) => {
-//       let numberOfUnit = item.numberOfUnit;
-  
-//       if (item.id === id) {
-//         if (action === "minus" && numberOfUnit > 1) {
-//           numberOfUnit--;
-//         } else if (action === "plus") {
-//           numberOfUnit++;
-//         }
-//       }
-//       return {
-//         ...item,
-//         numberOfUnit,
-//       };
-//     });
-
-//     updateCart();
-// }
